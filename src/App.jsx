@@ -64,7 +64,7 @@ function App() {
           HDS Orders
         </h1>
         <h2 className="text-2xl text-center font-bold italic text-secondary bg-quaternary shadow-md p-2">
-          Total Sales: ${totalSales}
+          Total Sales: ₡{totalSales}
         </h2>
       </div>
       <div className='flex'>
@@ -102,7 +102,7 @@ function App() {
                       order.items.map((item, index) => (
                         <div key={index} className="items_container">
                           <div className="text_item_display">{item.itemName}</div>
-                            <span className='text_item_display font-bold'>${item.price} QTY: {item.quantity}</span>
+                            <span className='text_item_display font-bold'>₡{item.price} QTY: {item.quantity}</span>
                             {
                               item.variant && (
                                 <div className="text_item_display">Variant: {item.variant}</div>
